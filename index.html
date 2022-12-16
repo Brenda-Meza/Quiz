@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        header{
+            text-align:center;
+            font-size:20px;
+            padding:10px;
+        }
+        #wrong{
+            font-size:10px;
+            color:whitesmoke;
+        }
+        form{
+            width:900px;
+            height:auto;
+            text-align: justify;
+            margin-left:320px;
+            font-size: 20px;
+        }
+        body{
+            background-color: bisque;
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>CSS Quiz</header>
+    <form id="form">
+        <fieldset>
+            <legend>Question 1:</legend>How do you add a gradient background to your website (Blue to Purple)?
+            <br><br>
+            <input type="radio" class="Q1" id="A1" name="Q1">backround-color: linear-gradient(red, yellow);
+            <br><br>
+            <input type="radio" class="Q1" id="B1" name="Q1" onclick="correct()">backround-image: linear-gradient(blue, purple);
+            <br><br>
+            <input type="radio" class="Q1" id="C1" name="Q1">backround-image: linear-gradient(red, yellow);
+            <br><br>
+            <input type="radio" class="Q1" id="D1" name="Q1">backround-color: linear-gradient(blue, purple);
+            <br><br>
+        </fieldset>
+            
+        <fieldset>
+            <legend>Question 2:</legend>How do you apply a blur filter at 10px to an image?
+            <br><br>
+            <label for="Q2"></label>
+            <input type="radio" class="Q2" id="A2" name="Q2">filter: blur 10px;
+            <br><br>
+            <input type="radio" class="Q2" id="B2" name="Q2">filter: blurry(10px);
+            <br><br>
+            <input type="radio" class="Q2" id="C2" name="Q2">filter:blur{blur 10px};
+            <br><br>
+            <input type="radio" class="Q2" id="D2" name="Q2" onclick="correct()">filter: blur(10px);
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 3:</legend>A student wants to make the font color orange, is the following code correct?<br><br>div{<br> color: orange;<br> font-size:16px;<br>}<br><br>
+            <label for="Q3"></label>
+            <input type="radio" class="Q3" id="A3" name="Q3" onclick="correct()">Yes
+            <br><br>
+            <input type="radio" class="Q3" id="B3" name="Q3">No
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 4:</legend> What does the following code do?<br><br> #Container{<br> background-color: black;<br> font-size: 20px;<br>margin: 10px solid black;<br>text-align: center;<br>}<br><br>
+            <label for="Q4"></label>
+            <input type="radio" class="Q4" id="A4" name="Q4"> Makes the item with the id of container have a black background, doesn't change the font size, aligns the text, and adds a border.
+            <br><br>
+            <input type="radio" class="Q4" id="B4" name="Q4" onclick="correct()">Makes the item with the id of container have a black background, makes the font size larger, aligns the text, and adds a border.
+            <br><br>
+            <input type="radio" class="Q4" id="C4" name="Q4">Makes the item with the class of container have a black background, makes the font size larger, aligns the text, and adds a border.
+            <br><br>
+            <input type="radio" class="Q4" id="D4" name="Q4">Makes the item with the class of container have a black background, doesn't change the font size, aligns the text, and adds a border.
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 5:</legend> How do you call a class in your CSS?<br><br>
+            <label for="Q5"></label>
+            <input type="radio" class="Q5" id="A5" name="Q5"  onclick="correct()"> Use a .
+            <br><br>
+            <input type="radio" class="Q5" id="A5" name="Q5"> Use a #
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 6:</legend> How do you seperate a div from the left side of the screen using margin?<br><br>
+            <label for="Q6"></label>
+            <input type="radio" class="Q6" id="A6" name="Q6"> margin-right: 10px;
+            <br><br>
+            <input type="radio" class="Q6" id="A6" name="Q6"> margin: 10px;
+            <br><br>
+            <input type="radio" class="Q6" id="A6" name="Q6" onclick="correct()"> margin-left: 10px;
+            <br><br>
+            <input type="radio" class="Q6" id="A6" name="Q6"> margin-top: 10px;
+            <br><br>
+        </fieldset>
+
+        <fieldset>   
+            <legend>Question 7:</legend> What does padding do? <br><br>
+            <label for="Q7"></label>
+            <input type="radio" class="Q7" id="A7" name="Q7"> Adds space only to the right of an item
+            <br><br>
+            <input type="radio" class="Q7" id="B7" name="Q7"> Adds space only to the left of an item
+            <br><br>
+            <input type="radio" class="Q7" id="C7" onclick="correct()" name="Q7"> Adds space around the item 
+            <br><br>
+            <input type="radio" class="Q7" id="D7" name="Q7"> It doesn't do anything
+            <br><br>
+            <input type="submit" onclick="Score()">
+        </fieldset>
+        <br>
+</form>
+</body>
+<script>
+    var score = 0
+    function Score(){
+        alert("Your score:" + score + "/7")
+    }
+    function correct(){
+        score++
+    }
+</script>
+</html>
